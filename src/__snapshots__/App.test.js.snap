@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1qpytq4"
+  >
+    <h1
+      class="css-1t3ezx4"
+    >
+      My TODO List
+    </h1>
+    <div
+      class="css-1pd4htx"
+    >
+      <input
+        class="css-7z6aq6"
+        data-testid="input-title"
+        name="input-title"
+        type="text"
+        value=""
+      />
+      <button
+        class="css-nq14pk"
+        data-testid="button-create"
+      >
+        Create
+      </button>
+    </div>
+    <ul
+      class="css-1foypjs"
+    >
+      <hr />
+    </ul>
+  </div>
+</DocumentFragment>
+`;
