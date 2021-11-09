@@ -16,7 +16,6 @@ const Homepage = () => {
         My TODO List
         {isFetching === 1 ? (
           <Box
-            data-testid="loader"
             sx={{
               display: 'inline',
               ml: '5px',
@@ -31,8 +30,8 @@ const Homepage = () => {
           </Box>
         ) : null}
       </Heading>
-      <CreateTodo data-testid="create-todo-component" />
-      <Todos data-testid="todos-component" />
+      <CreateTodo />
+      <Todos />
     </Flex>
   );
 };

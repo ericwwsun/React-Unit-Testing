@@ -61,14 +61,12 @@ const Todo = ({ id, title, done }) => {
     <Flex>
       {isEditing ? (
         <Input
-          data-testid="input-title"
           name="input-title"
           defaultValue={title}
           onChange={onTitleChange}
         />
       ) : (
         <Label
-          data-testid="todo-title"
           fontSize={[3]}
           mb="1"
           sx={{
@@ -90,19 +88,9 @@ const Todo = ({ id, title, done }) => {
         }}
       >
         {isEditing ? (
-          <FontAwesomeIcon
-            data-testid="button-save"
-            icon={faSave}
-            onClick={onSave}
-            size="lg"
-          />
+          <FontAwesomeIcon icon={faSave} onClick={onSave} size="lg" />
         ) : (
-          <FontAwesomeIcon
-            data-testid="button-edit"
-            icon={faEdit}
-            onClick={onEdit}
-            size="lg"
-          />
+          <FontAwesomeIcon icon={faEdit} onClick={onEdit} size="lg" />
         )}
       </Flex>
     </Flex>

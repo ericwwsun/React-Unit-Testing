@@ -32,7 +32,6 @@ const CreateTodo = () => {
   return (
     <Flex mb={40}>
       <Input
-        data-testid="input-title"
         name="input-title"
         onChange={handleChange}
         value={title}
@@ -40,7 +39,6 @@ const CreateTodo = () => {
         mr={10}
       />
       <Button
-        data-testid="button-create"
         onClick={handleClick}
         sx={{
           backgroundColor: '#000',

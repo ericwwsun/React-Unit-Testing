@@ -19,7 +19,6 @@ const Todos = () => {
         (todo) =>
           !todo.done && (
             <Box
-              data-testid="todo-not-done"
               as="li"
               key={todo.id}
               sx={{
@@ -35,7 +34,6 @@ const Todos = () => {
         (todo) =>
           todo.done && (
             <Box
-              data-testid="todo-done"
               key={todo.id}
               as="li"
               sx={{
@@ -47,9 +45,7 @@ const Todos = () => {
           )
       )}
 
-      {data?.length === 0 && (
-        <Text data-testid="no-result">Yayy! Nothing to do here!</Text>
-      )}
+      {data?.length === 0 && <Text>Yayy! Nothing to do here!</Text>}
     </Flex>
   );
 };
